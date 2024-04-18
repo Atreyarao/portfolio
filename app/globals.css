@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+html {
+  scroll-behavior: smooth;
+}
+.nicolas_sm_button button {
+  border: 0;
+  font-family: "Montserrat";
+  font-size: 16px;
+  cursor: pointer;
+}
+.nicolas_sm_hero .arrow {
+  width: 100%;
+}
+
+.search .search_btn {
+  width: 60px;
+  height: 60px;
+  background-color: #ffbd4a;
+  border: 1px solid #ffbd4a;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.nicolas_sm_blog_details .posted li a {
+  display: flex;
+}
