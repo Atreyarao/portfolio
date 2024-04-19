@@ -62,31 +62,31 @@ const About = ({
           <Marquee className="marquee">
             <div className="wrap">
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.svg" alt={1} />
               </div>
               <div>
                 <h3>10+ full stack projects </h3>
               </div>
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.svg" alt={1} />
               </div>
               <div>
                 <h3>3+ years of experience</h3>
               </div>
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.svg" alt={1} />
               </div>
               <div>
                 <h3>10+ team members</h3>
               </div>
               {/* <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.svg" alt={1} />
               </div>
               <div>
                 <h3>3 success projects</h3>
               </div> */}
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.svg" alt={1} />
               </div>
               <div>
                 <h3>100k+ happy users</h3>

@@ -120,7 +120,7 @@ export default {
       "img/portfolio/Ticket_3.png",
     ],
     link: "",
-    projectFor: "Personal Project",
+    projectFor: "Work (Employwise)",
     techStack: "ReactJS, NodeJS, MongoDB, Express JS, AWS, Gmail API",
     category: "Full Stack Project",
   },
@@ -168,7 +168,7 @@ export default {
     mainImg: "img/portfolio/ebook.png",
     mainVideo: "img/portfolio/simplefashion.mp4",
     subHeading:
-      "I've authored a comprehensive ebook covering React.js, delving into its concepts, best practices, and practical applications.",
+      "I've developed a print-on-demand service utilizing Shopify and React.js.",
     content: [
       {
         type: "S",

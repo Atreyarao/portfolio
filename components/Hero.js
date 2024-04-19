@@ -77,7 +77,7 @@ const Hero = () => {
                   </div>
                   <div className="info_list">
                     <img src="img/hero/shape.png" alt="shape" />
-                    {/* <h3>Find with me</h3> */}
+                    {/* <h3 style={{textAlign:'center'}}>Contract me</h3> */}
                     <ul className="social">
                       {/* <li>
                         <a href="#">
@@ -114,6 +114,54 @@ const Hero = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/linkedin.svg"
+                            alt={4}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="__blank"
+                          href="/Documents/resume.pdf"
+                        >
+                          <img
+                            className="sm_svg"
+                            src="img/svg/resume.svg"
+                            alt={4}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="__blank"
+                          href="https://wa.me/7095317965"
+                        >
+                          <img
+                            className="sm_svg"
+                            src="img/svg/whatsapp.svg"
+                            alt={4}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          
+                          href="mailto:atreyarao70@gmail.com"
+                        >
+                          <img
+                            className="sm_svg"
+                            src="img/svg/gmail.svg"
+                            alt={4}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="__blank"
+                          href="https://github.com/atreyarao"
+                        >
+                          <img
+                            className="sm_svg"
+                            src="img/svg/git.svg"
                             alt={4}
                           />
                         </a>

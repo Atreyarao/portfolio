@@ -10,7 +10,7 @@ const Portfolio = ({ noTitle = false }) => {
             <div className="container">
               <div className="projects">
                 <span> let me show you</span>
-                <Link href="portfolio">(( project all ))</Link>
+                <Link href="portfolio">All Projects</Link>
               </div>
             </div>
           )}

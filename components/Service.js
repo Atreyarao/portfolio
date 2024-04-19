@@ -16,7 +16,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                 </p>
               </div>
               <div className="right">
-                <Link href="service">(( Skills all ))</Link>
+                <Link href="skills">All Skills</Link>
               </div>
             </div>
             <div className="extra_container">

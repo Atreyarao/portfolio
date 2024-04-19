@@ -56,7 +56,7 @@ const page = () => {
                       />
                     </a>
                     {mainVideo ? (
-                      <video src={mainVideo} controls />
+                      <video width={"100%"} style={{objectFit:'cover',transform:'scale(0.8)'}} src={mainVideo} controls />
                     ) : (
                       <img src={mainImg} alt={8} />
                     )}
