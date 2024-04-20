@@ -8,6 +8,7 @@ import Pricing from "@/components/Pricing";
 import Service from "@/components/Service";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import NikolasLayout from "@/layouts/NikolasLayout";
+import Counter from "./Counter";
 
 const page = () => {
   return (
@@ -36,6 +37,7 @@ const page = () => {
       {/* Blog */}
       {/* <Blog /> */}
       {/* /Blog */}
+      <Counter />
     </NikolasLayout>
   );
 };
