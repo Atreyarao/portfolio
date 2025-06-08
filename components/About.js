@@ -14,7 +14,7 @@ const About = ({
             </div>
             <div className="center">
               <p>
-                Hi, I'm Atreya, a Lead Developer at EmployWise. With expertise
+                Hi, I'm Atreya Rao, a Lead Developer at EmployWise. With expertise
                 in full-stack development, optimizing user experiences and
                 platform functionality. From React and React Native to Java and
                 MongoDB, I thrive on crafting scalable and secure solutions.
@@ -39,7 +39,7 @@ const About = ({
                 <li>
                   <div className="list_inner">
                     <span>Experience</span>
-                    <h3>3 years experience</h3>
+                    <h3>4 years experience</h3>
                   </div>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ const About = ({
                 <img src="img/about/star.svg" alt={1} />
               </div>
               <div>
-                <h3>3+ years of experience</h3>
+                <h3>4+ years of experience</h3>
               </div>
               <div>
                 <img src="img/about/star.svg" alt={1} />

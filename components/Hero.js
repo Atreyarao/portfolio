@@ -31,11 +31,7 @@ const Hero = () => {
           </div>
           <div className="hero_scroll_title">
             <span>
-              <img
-                className="sm_svg bounce"
-                src="img/svg/down_arrow.svg"
-                alt={1}
-              />
+              <img className="sm_svg bounce" src="img/svg/down_arrow.svg" alt={1} />
             </span>
           </div>
           <div className="overlay_el">
@@ -47,17 +43,16 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>About me</h3>
                     <p>
-                      Hi, I'm Atreya, a Lead Developer at EmployWise. An
-                      aspiring entrepreneur, with ability to built products from
-                      scratch.
+                      Hi, I'm Atreya Rao, a Lead Developer at EmployWise. An aspiring entrepreneur,
+                      with ability to built products from scratch.
                     </p>
                   </div>
                   <div className="info_list">
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>What i do</h3>
                     <p>
-                      Front End Development 🧑‍💻 / Mobile Development 📱 / Backend
-                      Development / Build Products 👷‍♂️
+                      Front End Development 🧑‍💻 / Mobile Development 📱 / Backend Development / Build
+                      Products 👷‍♂️
                     </p>
                   </div>
                 </div>
@@ -111,59 +106,27 @@ const Hero = () => {
                           target="__blank"
                           href="https://www.linkedin.com/in/atreya-rao-ba7a47168/"
                         >
-                          <img
-                            className="sm_svg"
-                            src="img/svg/linkedin.svg"
-                            alt={4}
-                          />
+                          <img className="sm_svg" src="img/svg/linkedin.svg" alt={4} />
                         </a>
                       </li>
                       <li>
-                        <a
-                          target="__blank"
-                          href="/Documents/resume.pdf"
-                        >
-                          <img
-                            className="sm_svg"
-                            src="img/svg/resume.svg"
-                            alt={4}
-                          />
+                        <a target="__blank" href="/Documents/resume.pdf">
+                          <img className="sm_svg" src="img/svg/resume.svg" alt={4} />
                         </a>
                       </li>
                       <li>
-                        <a
-                          target="__blank"
-                          href="https://wa.me/7095317965"
-                        >
-                          <img
-                            className="sm_svg"
-                            src="img/svg/whatsapp.svg"
-                            alt={4}
-                          />
+                        <a target="__blank" href="https://wa.me/7095317965">
+                          <img className="sm_svg" src="img/svg/whatsapp.svg" alt={4} />
                         </a>
                       </li>
                       <li>
-                        <a
-                          
-                          href="mailto:atreyarao70@gmail.com"
-                        >
-                          <img
-                            className="sm_svg"
-                            src="img/svg/gmail.svg"
-                            alt={4}
-                          />
+                        <a href="mailto:atreyarao70@gmail.com">
+                          <img className="sm_svg" src="img/svg/gmail.svg" alt={4} />
                         </a>
                       </li>
                       <li>
-                        <a
-                          target="__blank"
-                          href="https://github.com/atreyarao"
-                        >
-                          <img
-                            className="sm_svg"
-                            src="img/svg/git.svg"
-                            alt={4}
-                          />
+                        <a target="__blank" href="https://github.com/atreyarao">
+                          <img className="sm_svg" src="img/svg/git.svg" alt={4} />
                         </a>
                       </li>
                       {/* <li>

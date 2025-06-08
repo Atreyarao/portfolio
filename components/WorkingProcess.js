@@ -6,7 +6,7 @@ const WorkingProcess = () => {
           <div className="left"></div>
           <div className="center">
             <p>
-              Over a 3+ years of experience in development and working with some
+              Over a 4+ years of experience in development and working with some
               of the most talented people in the business
             </p>
           </div>
