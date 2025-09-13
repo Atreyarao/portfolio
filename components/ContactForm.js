@@ -168,7 +168,7 @@ const ContactForm = () => {
             onChange={(e) => onChange(e)}
             value={message}
             className="cf-form-control"
-            defaultValue={""}
+        
           />
         </li>
         <li

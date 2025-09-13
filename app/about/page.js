@@ -5,6 +5,8 @@ import Partners from "@/components/Partners";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import NikolasLayout from "@/layouts/NikolasLayout";
 import Link from "next/link";
+
+
 const page = () => {
   return (
     <NikolasLayout>
@@ -159,7 +161,7 @@ const page = () => {
             </div>
             <div className="center">
               <p>
-                As a Lead Developer at EmployWise, I leverage my expertise in
+                As a Software Engineer, I leverage my expertise in
                 full-stack development to create innovative and user-friendly
                 solutions for the HR and payroll industry. I work with a team of
                 talented engineers to design, develop, and deploy scalable and
@@ -175,6 +177,17 @@ const page = () => {
         <div className="container">
           <div className="extra_container">
             <div className="experience_in">
+                  <div className="list_inner">
+                <div className="left">
+                  <p>Deloitte USI</p>
+                </div>
+                <div className="center">
+                  <p>Consultant</p>
+                </div>
+                <div className="right">
+                  <span>September 2025 - Present</span>
+                </div>
+              </div>
               <div className="list_inner">
                 <div className="left">
                   <p>Employwise</p>
@@ -183,7 +196,7 @@ const page = () => {
                   <p>Lead Developer</p>
                 </div>
                 <div className="right">
-                  <span>December 2020 - Present</span>
+                  <span>December 2020 - September 2025</span>
                 </div>
               </div>
               <div className="list_inner">
@@ -202,7 +215,7 @@ const page = () => {
                   <p>Stirring Minds</p>
                 </div>
                 <div className="center">
-                  <p>WordPress &amp; Developer</p>
+                  <p>WordPress Intern</p>
                 </div>
                 <div className="right">
                   <span>August 2020 - September 2020</span>

@@ -28,11 +28,26 @@ const page = () => {
       {/* Slider */}
       <div className="nicolas_sm_portfolio_slider swiper-section">
         <div className="slider_in">
-          <Swiper
-            {...sliderProps.nicolas_sm_portfolio_slider}
-            className="swiper-container"
-          >
+          <Swiper {...sliderProps.nicolas_sm_portfolio_slider} className="swiper-container">
             <div className="swiper-wrapper">
+              <SwiperSlide className="swiper-slide">
+                <div className="list_inner">
+                  <img
+                    style={{ objectFit: "contain" }}
+                    src="https://www.odetoparis.com/images/logo.webp"
+                    alt={1}
+                  />
+                  <div className="details">
+                    <div className="category">
+                      <span>Full Stack</span>
+                    </div>
+                    <div className="title">
+                      <h3>Ode To Paris</h3>
+                    </div>
+                  </div>
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=6" />
+                </div>
+              </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
                   <img
@@ -48,10 +63,7 @@ const page = () => {
                       <h3>We Residents</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single?id=1"
-                  />
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=1" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -69,10 +81,7 @@ const page = () => {
                       <h3>We Residents Mobile App</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single?id=2"
-                  />
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -90,10 +99,7 @@ const page = () => {
                       <h3>Ticketing System</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single?id=3"
-                  />
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=3" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -107,10 +113,7 @@ const page = () => {
                       <h3>React E-Book</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single?id=4"
-                  />
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=4" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -124,10 +127,7 @@ const page = () => {
                       <h3>Simplefashion.in</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single?id=5"
-                  />
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=5" />
                 </div>
               </SwiperSlide>
               {/* Duplicate */}
@@ -146,10 +146,7 @@ const page = () => {
                       <h3>We Residents Mobile App</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single?id=2"
-                  />
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -167,10 +164,7 @@ const page = () => {
                       <h3>We Residents Mobile App</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single?id=2"
-                  />
+                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=2" />
                 </div>
               </SwiperSlide>
               {/* <SwiperSlide className="swiper-slide">

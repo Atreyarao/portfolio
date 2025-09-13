@@ -43,7 +43,7 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>About me</h3>
                     <p>
-                      Hi, I'm Atreya Rao, a Lead Developer at EmployWise. An aspiring entrepreneur,
+                      Hi, I'm Atreya Rao, Consultant @ Deloitte USI. An aspiring entrepreneur,
                       with ability to built products from scratch.
                     </p>
                   </div>

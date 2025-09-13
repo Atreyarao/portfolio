@@ -1,9 +1,10 @@
 import Marquee from "react-fast-marquee";
+import { getMyWorkExp } from "@/components/_utils";
 
-const About = ({
-  sectionTitle = "About me",
-  nextSection = "service",
-}) => {
+const About = ({ sectionTitle = "About me", nextSection = "service" }) => {
+  const exp = getMyWorkExp() || "4+";
+
+  
   return (
     <div className="nicolas_sm_section" id="about">
       <div className="nicolas_sm_about">
@@ -14,10 +15,10 @@ const About = ({
             </div>
             <div className="center">
               <p>
-                Hi, I'm Atreya Rao, a Lead Developer at EmployWise. With expertise
-                in full-stack development, optimizing user experiences and
-                platform functionality. From React and React Native to Java and
-                MongoDB, I thrive on crafting scalable and secure solutions.
+                Hi, I'm Atreya Rao, Consultant @ Deloitte USI. With expertise in full-stack
+                development, optimizing user experiences and platform functionality. From React and
+                React Native to Java and MongoDB, I thrive on crafting scalable and secure
+                solutions.
               </p>
             </div>
             <div className="right">
@@ -39,7 +40,7 @@ const About = ({
                 <li>
                   <div className="list_inner">
                     <span>Experience</span>
-                    <h3>4 years experience</h3>
+                    <h3>{exp} years experience</h3>
                   </div>
                 </li>
                 <li>
@@ -71,7 +72,7 @@ const About = ({
                 <img src="img/about/star.svg" alt={1} />
               </div>
               <div>
-                <h3>4+ years of experience</h3>
+                <h3>{exp} years of experience</h3>
               </div>
               <div>
                 <img src="img/about/star.svg" alt={1} />

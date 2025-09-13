@@ -167,8 +167,7 @@ export default {
     title: "E-commerce",
     mainImg: "img/portfolio/ebook.png",
     mainVideo: "img/portfolio/simplefashion.mp4",
-    subHeading:
-      "I've developed a print-on-demand service utilizing Shopify and React.js.",
+    subHeading: "I've developed a print-on-demand service utilizing Shopify and React.js.",
     content: [
       {
         type: "S",
@@ -194,5 +193,37 @@ export default {
     projectFor: "Personal Project",
     techStack: "ReactJS,Shopify",
     category: "Front End Project",
+  },
+  6: {
+    title: "Ode To Paris",
+    mainImg: "https://www.odetoparis.com/images/logo.webp",
+    // mainVideo: "img/portfolio/simplefashion.mp4",
+    subHeading:
+      "I've developed a SaaS-based tour management platform for a Paris walking tour service.",
+    content: [
+      {
+        type: "S",
+        string: `As a tech entrepreneur, I built a complete SaaS solution for a Paris-based walking tour business. The platform features a responsive public website for tourists and a powerful internal dashboard for managing every aspect of the business, from bookings to payments.`,
+      },
+      {
+        type: "P",
+        points: [
+          "Travelers can browse tours, view schedules, and book directly through the mobile-optimized website.",
+          "The admin dashboard enables tour operators to manage guides, customer data, time slots, and payment tracking from a single interface.",
+          "The system is built with scalability in mind to support multiple guides, multilingual content, and SEO-friendly blog content.",
+        ],
+      },
+      {
+        type: "S",
+        string: ``,
+      },
+    ],
+    subHeading2: "",
+    content2: ``,
+    images: Array.from({ length: 4 }, (_, i) => `img/portfolio/op${i + 1}.png`),
+    link: "https://www.odetoparis.com",
+    projectFor: "Paris Touring Project",
+    techStack: "ReactJS,Node.js,MongoDB,AWS",
+    category: "Full Stack Project",
   },
 };

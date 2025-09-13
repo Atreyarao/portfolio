@@ -1,3 +1,5 @@
+
+
 const WorkingProcess = () => {
   return (
     <div className="nicolas_sm_process">
@@ -6,7 +8,7 @@ const WorkingProcess = () => {
           <div className="left"></div>
           <div className="center">
             <p>
-              Over a 4+ years of experience in development and working with some
+              Over a many years of experience in development and working with some
               of the most talented people in the business
             </p>
           </div>

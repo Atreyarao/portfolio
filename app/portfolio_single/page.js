@@ -164,7 +164,7 @@ const page = () => {
                       {images?.map((ele, index) => (
                         <li key={`image-${index}`}>
                           <div className="list_inner">
-                            <img src={ele} alt={`image-${index}`} />
+                            <img src={ele} alt={`image-${index}`} style={{objectFit:'contain'}} />
                           </div>
                         </li>
                       ))}
