@@ -1,4 +1,5 @@
 import Preloader from "@/layouts/Preloader";
+import CookieConsent from "@/components/CookieConsent";
 import "@css/plugins.css";
 import "@css/style.css";
 import "./globals.css";
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <CookieConsent />
         <Preloader />
         {children}
       </body>

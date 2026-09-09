@@ -161,12 +161,11 @@ const page = () => {
             </div>
             <div className="center">
               <p>
-                As a Software Engineer, I leverage my expertise in
-                full-stack development to create innovative and user-friendly
-                solutions for the HR and payroll industry. I work with a team of
-                talented engineers to design, develop, and deploy scalable and
-                secure applications using Java, React, React Native, Node js and
-                MongoDB.
+                As a Software Engineer 2 at Deloitte, I leverage my expertise in
+                full-stack development to build scalable, secure insurance platforms
+                on AWS EKS. I work with a team of talented engineers to design,
+                develop, and deploy applications using Node.js, NestJS, React,
+                Kubernetes, and Terraform.
               </p>
             </div>
             <div className="right">
@@ -182,7 +181,7 @@ const page = () => {
                   <p>Deloitte USI</p>
                 </div>
                 <div className="center">
-                  <p>Consultant</p>
+                  <p>Software Engineer 2</p>
                 </div>
                 <div className="right">
                   <span>September 2025 - Present</span>

@@ -15,9 +15,9 @@ const About = ({ sectionTitle = "About me", nextSection = "service" }) => {
             </div>
             <div className="center">
               <p>
-                Hi, I'm Atreya Rao, Consultant @ Deloitte USI. With expertise in full-stack
+                Hi, I'm Atreya Rao, Software Engineer 2 @ Deloitte USI. With expertise in full-stack
                 development, optimizing user experiences and platform functionality. From React and
-                React Native to Java and MongoDB, I thrive on crafting scalable and secure
+                Node.js/NestJS to AWS EKS and Kubernetes, I thrive on crafting scalable and secure
                 solutions.
               </p>
             </div>

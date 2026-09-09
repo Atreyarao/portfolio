@@ -1,5 +1,5 @@
 export function getMyWorkExp() {
-  const startDate = new Date(2021, 5); // December is month 11 (0-based index)
+  const startDate = new Date(2020, 11); // December is month 11 (0-based index)
   const today = new Date();
 
   let years = today.getFullYear() - startDate.getFullYear();
