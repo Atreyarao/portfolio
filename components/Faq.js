@@ -57,7 +57,7 @@ const Faq = ({ limit = 10 }) => {
                   <img
                     className="sm_svg"
                     src="img/svg/down_arrow.svg"
-                    alt={1}
+                    alt=""
                   />
                 </div>
               </div>

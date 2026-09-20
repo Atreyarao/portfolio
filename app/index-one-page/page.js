@@ -34,7 +34,7 @@ const page = () => {
       {/* <Pricing /> */}
       {/* /Pricing */}
       {/* Blog */}
-      {/* <Blog /> */}
+      <Blog />
       {/* /Blog */}
     </NikolasLayout>
   );

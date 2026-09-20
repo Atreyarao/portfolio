@@ -34,7 +34,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/1.png"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -49,7 +49,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/2.png"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -64,7 +64,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/3.png"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -79,7 +79,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/4.png"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -94,7 +94,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/5.png"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>

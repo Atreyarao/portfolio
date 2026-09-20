@@ -2,9 +2,18 @@ import ContactForm from "@/components/ContactForm";
 import Faq from "@/components/Faq";
 import { Copyright2 } from "@/layouts/Copyright";
 import NikolasLayout from "@/layouts/NikolasLayout";
+import { pageMetadata } from "@/utility/site";
+
+export const metadata = pageMetadata({
+  title: "Contact",
+  description:
+    "Get in touch with Atreya Rao about full stack, mobile or cloud engineering roles and projects. Email, LinkedIn and résumé.",
+  path: "/contact",
+});
 const page = () => {
   return (
     <NikolasLayout noFooter>
+      <h1 className="sr_only">Contact Atreya Rao</h1>
       <div className="nicolas_sm_contact">
         <div className="nicolas_sm_page_title">
           <div className="container">
@@ -28,7 +37,7 @@ const page = () => {
                     <img
                       className="sm_svg"
                       src="img/svg/down_arrow.svg"
-                      alt={1}
+                      alt=""
                     />
                   </a>
                 </div>

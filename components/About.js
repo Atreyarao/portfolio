@@ -24,7 +24,7 @@ const About = ({ sectionTitle = "About me", nextSection = "service" }) => {
             <div className="right">
               <div className="scroll anchor">
                 <a href={`#${nextSection}`} />
-                <img className="sm_svg" src="img/svg/down_arrow.svg" alt={2} />
+                <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
               </div>
             </div>
           </div>
@@ -63,37 +63,37 @@ const About = ({ sectionTitle = "About me", nextSection = "service" }) => {
           <Marquee className="marquee">
             <div className="wrap">
               <div>
-                <img src="img/about/star.svg" alt={1} />
+                <img src="img/about/star.svg" alt="" />
               </div>
               <div>
                 <h3>10+ full stack projects </h3>
               </div>
               <div>
-                <img src="img/about/star.svg" alt={1} />
+                <img src="img/about/star.svg" alt="" />
               </div>
               <div>
                 <h3>{exp} years of experience</h3>
               </div>
               <div>
-                <img src="img/about/star.svg" alt={1} />
+                <img src="img/about/star.svg" alt="" />
               </div>
               <div>
                 <h3>10+ team members</h3>
               </div>
               {/* <div>
-                <img src="img/about/star.svg" alt={1} />
+                <img src="img/about/star.svg" alt="" />
               </div>
               <div>
                 <h3>3 success projects</h3>
               </div> */}
               <div>
-                <img src="img/about/star.svg" alt={1} />
+                <img src="img/about/star.svg" alt="" />
               </div>
               <div>
                 <h3>100k+ happy users</h3>
               </div>
               {/* <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.png" alt="" />
               </div>
               <div>
                 <h3>30+ team members</h3>

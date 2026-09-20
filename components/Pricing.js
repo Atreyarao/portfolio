@@ -63,7 +63,7 @@ const Pricing = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </span>
                       <a className="nicolas_sm_full_link" href="#" />
@@ -111,7 +111,7 @@ const Pricing = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </span>
                       <a className="nicolas_sm_full_link" href="#" />
@@ -159,7 +159,7 @@ const Pricing = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </span>
                       <a className="nicolas_sm_full_link" href="#" />

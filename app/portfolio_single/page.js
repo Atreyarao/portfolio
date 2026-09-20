@@ -1,204 +1,59 @@
-"use client";
-import NikolasLayout from "@/layouts/NikolasLayout";
-import { useSearchParams } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
+import { absoluteUrl, pageMetadata, site } from "@/utility/site";
 import data from "./data";
-import { Suspense } from "react";
+import PortfolioSingle from "./PortfolioSingle";
 
-const page = () => {
-  const searchParams = useSearchParams();
+const imageUrl = (src) => (src.startsWith("http") ? src : "/" + src);
 
-  let id = searchParams.get("id");
-  if (id) {
-    id = parseInt(id);
-    if (id < 1 || id > 6) return <></>;
-  }
-  const {
-    title,
-    mainImg,
-    subHeading,
-    content,
-    subHeading2,
-    content2,
-    projectFor,
-    techStack,
-    category,
-    link,
-    images,
-    mainVideo,
-  } = data[id] || { content: [] };
+const getProject = (searchParams) => {
+  const id = parseInt(searchParams?.id, 10);
+  return id >= 1 && id <= 6 ? { id, project: data[id] } : null;
+};
+
+export const generateMetadata = ({ searchParams }) => {
+  const found = getProject(searchParams);
+  if (!found) return { title: "Portfolio", robots: { index: false, follow: true } };
+
+  const { id, project } = found;
+  const description =
+    project.category +
+    ": " +
+    project.title +
+    ", built with " +
+    project.techStack.replace(/\s*,\s*/g, ", ") +
+    ". Portfolio case study by Atreya Rao.";
+  return pageMetadata({
+    title: project.title + " – " + project.category,
+    description,
+    path: "/portfolio_single?id=" + id,
+    image: imageUrl(project.mainImg),
+    imageSize: {},
+  });
+};
+
+const page = ({ searchParams }) => {
+  const found = getProject(searchParams);
   return (
-    <Suspense fallback={<>Loading</>}>
-      <NikolasLayout>
-        <div className="nicolas_sm_portfolio_single">
-          <div className="nicolas_sm_service_details">
-            <div className="nicolas_sm_page_title">
-              <div className="container">
-                <div className="nicolas_sm_breadcrumbs">
-                  <span>
-                    <a href="#">Home</a>
-                  </span>
-                  <span>{title}</span>
-                </div>
-                <div className="page_title_in">
-                  <h3></h3>
-                </div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="extra_container">
-                <div className="service_details_in">
-                  <div className="image anchor">
-                    <a href="#text">
-                      <img
-                        className="sm_svg"
-                        src="img/svg/down_arrow.svg"
-                        alt={1}
-                      />
-                    </a>
-                    {mainVideo ? (
-                      <video width={"100%"} style={{objectFit:'cover',transform:'scale(0.8)'}} src={mainVideo} controls />
-                    ) : (
-                      <img src={mainImg} alt={8} />
-                    )}
-                  </div>
-                  <div className="single_list">
-                    <ul>
-                      <li>
-                        <div className="list_inner">
-                          <h3>Project For:</h3>
-                          <p>{projectFor}</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="list_inner">
-                          <h3>Category:</h3>
-                          <p>{category}</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="list_inner">
-                          <h3>Tech Stack:</h3>
-                          <p>{techStack}</p>
-                        </div>
-                      </li>
-                      {/* <li>
-                      <div className="list_inner">
-                        <h3>Location:</h3>
-                        <p>Brooklyn, New York</p>
-                      </div>
-                    </li> */}
-                      <li>
-                        <div className="list_inner">
-                          <h3>Link:</h3>
-                          <div className="button">
-                            <a target="__blank" href={link}>
-                              Open
-                            </a>
-                          </div>
-                          {/* <ul>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="sm_svg"
-                                src="img/svg/facebook.svg"
-                                alt={1}
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="sm_svg"
-                                src="img/svg/twitter.svg"
-                                alt={2}
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="sm_svg"
-                                src="img/svg/instagram.svg"
-                                alt={3}
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="sm_svg"
-                                src="img/svg/linkedin.svg"
-                                alt={4}
-                              />
-                            </a>
-                          </li>
-                        </ul> */}
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="text" id="text">
-                    <h3>{subHeading}</h3>
-                    <p>{content[0]?.string}</p>
-                  </div>
-                  <div className="list">
-                    <ul>
-                      {content[1]?.points?.map((ele, index) => (
-                        <li key={`points-${index}`}>
-                          <div className="list_inner">
-                            <p>{ele}</p>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="main_text">
-                    <p>{content[2]?.string}</p>
-                  </div>
-                  <div className="text bottom">
-                    <h3>{subHeading2}</h3>
-                    <p>{content2}</p>
-                  </div>
-                  <div className="images">
-                    <ul>
-                      {images?.map((ele, index) => (
-                        <li key={`image-${index}`}>
-                          <div className="list_inner">
-                            <img src={ele} alt={`image-${index}`} style={{objectFit:'contain'}} />
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  {/* <div className="prev_next">
-                  <div className="prev">
-                    <a href="#">
-                      <img
-                        className="sm_svg"
-                        src="img/svg/arrow_left.svg"
-                        alt={1}
-                      />{" "}
-                      Previous
-                    </a>
-                  </div>
-                  <div className="next">
-                    <a href="#">
-                      Next{" "}
-                      <img
-                        className="sm_svg"
-                        src="img/svg/arrow_left.svg"
-                        alt={1}
-                      />
-                    </a>
-                  </div>
-                </div> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </NikolasLayout>
-    </Suspense>
+    <>
+      {found && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: found.project.title,
+            description: found.project.subHeading,
+            genre: found.project.category,
+            keywords: found.project.techStack,
+            image: imageUrl(found.project.mainImg).startsWith("http")
+              ? imageUrl(found.project.mainImg)
+              : absoluteUrl(imageUrl(found.project.mainImg)),
+            url: absoluteUrl("/portfolio_single?id=" + found.id),
+            author: { "@type": "Person", name: site.name, url: absoluteUrl("/") },
+          }}
+        />
+      )}
+      <PortfolioSingle />
+    </>
   );
 };
 export default page;

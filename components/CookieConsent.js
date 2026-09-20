@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { initClarity } from "./Clarity";
+import { initClarity, isLocalhost } from "./Clarity";
 
 const CONSENT_KEY = "clarity-consent";
 
@@ -8,6 +8,9 @@ const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    // Clarity is disabled on localhost, so there is nothing to ask consent for.
+    if (isLocalhost()) return;
+
     let consent = null;
     try {
       consent = localStorage.getItem(CONSENT_KEY);

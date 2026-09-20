@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Domain-driven NestJS backend: controllers, use-cases, domain, adapters, with idempotency, state machine, rules engine and outbox">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#242626" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#ffbd4a"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="#171818"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <text x="70" y="110" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700">Serverless <tspan fill="#ffbd4a">→</tspan> EKS</text>
+  <text x="70" y="158" fill="#959595" font-family="Helvetica, Arial, sans-serif" font-size="24">TypeScript · NestJS · domain-driven, rebuilt for correctness</text>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle">
+    <rect x="70"  y="240" width="220" height="110" rx="14" fill="#111212" stroke="#2f3030" stroke-width="2"/>
+    <text x="180" y="302" fill="#ffffff">Controllers</text>
+    <rect x="350" y="240" width="220" height="110" rx="14" fill="#111212" stroke="#2f3030" stroke-width="2"/>
+    <text x="460" y="302" fill="#ffffff">Use-cases</text>
+    <rect x="630" y="240" width="220" height="110" rx="14" fill="#111212" stroke="#ffbd4a" stroke-width="2"/>
+    <text x="740" y="302" fill="#ffbd4a">Domain</text>
+    <rect x="910" y="240" width="220" height="110" rx="14" fill="#111212" stroke="#2f3030" stroke-width="2"/>
+    <text x="1020" y="302" fill="#ffffff">Adapters</text>
+  </g>
+  <g stroke="#ffbd4a" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="294" y1="295" x2="346" y2="295"/>
+    <line x1="574" y1="295" x2="626" y2="295"/>
+    <line x1="906" y1="295" x2="854" y2="295"/>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#959595">
+    <rect x="100" y="430" width="150" height="44" rx="22" fill="none" stroke="#2f3030" stroke-width="2"/><text x="175" y="459">Idempotency</text>
+    <rect x="270" y="430" width="150" height="44" rx="22" fill="none" stroke="#2f3030" stroke-width="2"/><text x="345" y="459">State machine</text>
+    <rect x="440" y="430" width="150" height="44" rx="22" fill="none" stroke="#2f3030" stroke-width="2"/><text x="515" y="459">Rules engine</text>
+    <rect x="610" y="430" width="150" height="44" rx="22" fill="none" stroke="#2f3030" stroke-width="2"/><text x="685" y="459">Outbox</text>
+    <rect x="780" y="430" width="150" height="44" rx="22" fill="none" stroke="#2f3030" stroke-width="2"/><text x="855" y="459">OpenTelemetry</text>
+    <rect x="950" y="430" width="150" height="44" rx="22" fill="none" stroke="#ffbd4a" stroke-width="2"/><text x="1025" y="459" fill="#ffbd4a">CI gates</text>
+  </g>
+  <text x="70" y="570" fill="#959595" font-family="Helvetica, Arial, sans-serif" font-size="20">1,000 rps · 150ms p95 · 99.5% uptime · 90% unit test coverage</text>
+</svg>

@@ -30,52 +30,52 @@ const Partners = ({ title = "Customers", sectionNumber = "06" }) => {
                   <ul>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/amazon.png" alt={1} />
+                        <img src="img/partners/amazon.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/slack.png" alt={2} />
+                        <img src="img/partners/slack.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/google.png" alt={3} />
+                        <img src="img/partners/google.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/linkedin.png" alt={4} />
+                        <img src="img/partners/linkedin.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/walmart.png" alt={5} />
+                        <img src="img/partners/walmart.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/amazon.png" alt={1} />
+                        <img src="img/partners/amazon.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/slack.png" alt={2} />
+                        <img src="img/partners/slack.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/google.png" alt={3} />
+                        <img src="img/partners/google.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/linkedin.png" alt={4} />
+                        <img src="img/partners/linkedin.png" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/partners/walmart.png" alt={5} />
+                        <img src="img/partners/walmart.png" alt="" />
                       </div>
                     </li>
                   </ul>

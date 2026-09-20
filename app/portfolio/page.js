@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const page = () => {
   return (
     <NikolasLayout>
+      <h1 className="sr_only">Portfolio: projects by Atreya Rao</h1>
       {" "}
       {/* Page_title */}
       <div className="nicolas_sm_page_title">
@@ -35,7 +36,7 @@ const page = () => {
                   <img
                     style={{ objectFit: "contain" }}
                     src="https://www.odetoparis.com/images/logo.webp"
-                    alt={1}
+                    alt=""
                   />
                   <div className="details">
                     <div className="category">
@@ -45,15 +46,15 @@ const page = () => {
                       <h3>Ode To Paris</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=6" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=6" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img
+                  <img loading="lazy" decoding="async"
                     style={{ objectFit: "contain" }}
                     src="img/portfolio/weresidents.png"
-                    alt={1}
+                    alt="We Residents property management web app"
                   />
                   <div className="details">
                     <div className="category">
@@ -63,15 +64,15 @@ const page = () => {
                       <h3>We Residents</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=1" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=1" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img
+                  <img loading="lazy" decoding="async"
                     style={{ objectFit: "contain" }}
                     src="img/portfolio/weresidents_mobile_app_1.png"
-                    alt={2}
+                    alt="We Residents mobile app built with React Native"
                   />
                   <div className="details">
                     <div className="category">
@@ -81,15 +82,15 @@ const page = () => {
                       <h3>We Residents Mobile App</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=2" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img
+                  <img loading="lazy" decoding="async"
                     style={{ objectFit: "contain" }}
                     src="img/portfolio/Ticket_main.png"
-                    alt={3}
+                    alt="Ticketing system web app"
                   />
                   <div className="details">
                     <div className="category">
@@ -99,12 +100,12 @@ const page = () => {
                       <h3>Ticketing System</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=3" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=3" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/ebook.png" alt={4} />
+                  <img loading="lazy" decoding="async" src="img/portfolio/ebook.png" alt="React E-Book reader" />
                   <div className="details">
                     <div className="category">
                       <span>E-Book</span>
@@ -113,12 +114,12 @@ const page = () => {
                       <h3>React E-Book</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=4" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=4" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/1.jpg" alt={1} />
+                  <img loading="lazy" decoding="async" src="img/portfolio/1.jpg" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>E-Commerce</span>
@@ -127,16 +128,16 @@ const page = () => {
                       <h3>Simplefashion.in</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=5" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=5" />
                 </div>
               </SwiperSlide>
               {/* Duplicate */}
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img
+                  <img loading="lazy" decoding="async"
                     style={{ objectFit: "contain" }}
                     src="img/portfolio/weresidents_mobile_app_1.png"
-                    alt={2}
+                    alt="We Residents mobile app built with React Native"
                   />
                   <div className="details">
                     <div className="category">
@@ -146,15 +147,15 @@ const page = () => {
                       <h3>We Residents Mobile App</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=2" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img
+                  <img loading="lazy" decoding="async"
                     style={{ objectFit: "contain" }}
                     src="img/portfolio/weresidents_mobile_app_1.png"
-                    alt={2}
+                    alt="We Residents mobile app built with React Native"
                   />
                   <div className="details">
                     <div className="category">
@@ -164,12 +165,12 @@ const page = () => {
                       <h3>We Residents Mobile App</h3>
                     </div>
                   </div>
-                  <Link className="nicolas_sm_full_link" href="portfolio_single?id=2" />
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single?id=2" />
                 </div>
               </SwiperSlide>
               {/* <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/2.jpg" alt={2} />
+                  <img loading="lazy" decoding="async" src="img/portfolio/2.jpg" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Designing</span>
@@ -180,13 +181,13 @@ const page = () => {
                   </div>
                   <Link
                     className="nicolas_sm_full_link"
-                    href="portfolio_single"
+                    href="/portfolio_single"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/3.jpg" alt={3} />
+                  <img loading="lazy" decoding="async" src="img/portfolio/3.jpg" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Designing</span>
@@ -197,13 +198,13 @@ const page = () => {
                   </div>
                   <Link
                     className="nicolas_sm_full_link"
-                    href="portfolio_single"
+                    href="/portfolio_single"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/4.jpg" alt={4} />
+                  <img loading="lazy" decoding="async" src="img/portfolio/4.jpg" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Designing</span>
@@ -214,13 +215,13 @@ const page = () => {
                   </div>
                   <Link
                     className="nicolas_sm_full_link"
-                    href="portfolio_single"
+                    href="/portfolio_single"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/5.jpg" alt={5} />
+                  <img loading="lazy" decoding="async" src="img/portfolio/5.jpg" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Designing</span>
@@ -231,7 +232,7 @@ const page = () => {
                   </div>
                   <Link
                     className="nicolas_sm_full_link"
-                    href="portfolio_single"
+                    href="/portfolio_single"
                   />
                 </div>
               </SwiperSlide> */}

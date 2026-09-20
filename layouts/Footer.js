@@ -34,8 +34,8 @@ const Footer = () => {
                         <span>Facebook</span>
                         <img
                           className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
+                          src="/img/svg/down_arrow.svg"
+                          alt=""
                         />
                       </a>
                     </li>
@@ -44,8 +44,8 @@ const Footer = () => {
                         <span>Linkedin</span>
                         <img
                           className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
+                          src="/img/svg/down_arrow.svg"
+                          alt=""
                         />
                       </a>
                     </li>

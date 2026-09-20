@@ -13,11 +13,11 @@ const Header = () => {
 
   const menus = [
     { id: 1, title: "home", href: "/" },
-    { id: 2, title: "about", href: "about" },
-    { id: 3, title: "skills", href: "skills" },
-    { id: 4, title: "portfolio", href: "portfolio" },
-    // { id: 5, title: "blog", href: "blog" },
-    { id: 6, title: "contact", href: "contact" },
+    { id: 2, title: "about", href: "/about" },
+    { id: 3, title: "skills", href: "/skills" },
+    { id: 4, title: "portfolio", href: "/portfolio" },
+    { id: 5, title: "blog", href: "/blog" },
+    { id: 6, title: "contact", href: "/contact" },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Header = () => {
           <div className="mobile_in">
             <div className="logo">
               <a href="#">
-                <img src="img/logo/logo.png" alt="" />
+                <img src="/img/logo/logo.png" alt="Atreya Rao – home" />
               </a>
             </div>
             <div className="trigger" onClick={() => setToggle(!toggle)}>
@@ -63,7 +63,7 @@ const Header = () => {
           <div className="overlay_content">
             <div className="logo">
               <Link href="/">
-                <img src="img/logo/logo.png" alt={2} />
+                <img src="/img/logo/logo.png" alt="Atreya Rao – home" />
               </Link>
             </div>
             <div className="menu">
@@ -87,7 +87,7 @@ const Header = () => {
               </ul>
             </div>
             <div className="button">
-              <Link href="contact">
+              <Link href="/contact">
                 Let's talk 
               </Link>
             </div>
@@ -110,12 +110,12 @@ export const OnePageHeader = () => {
   const pathName = usePathname();
 
   const menus = [
-    { id: 1, title: "home", href: "#home" },
-    { id: 2, title: "about", href: "#about" },
-    { id: 3, title: "skills", href: "#skills" },
-    { id: 4, title: "portfolio", href: "#portfolio" },
-    // { id: 4, title: "Blog", href: "#blog" },
-    { id: 5, title: "contact", href: "#contact" },
+    { id: 1, title: "home", href: "/#home" },
+    { id: 2, title: "about", href: "/#about" },
+    { id: 3, title: "skills", href: "/#skills" },
+    { id: 4, title: "portfolio", href: "/#portfolio" },
+    { id: 5, title: "blog", href: "/#blog" },
+    { id: 6, title: "contact", href: "/#contact" },
   ];
 
   return (
@@ -126,7 +126,7 @@ export const OnePageHeader = () => {
           <div className="mobile_in">
             <div className="logo">
               <a href="#">
-                <img src="img/logo/logo.png" alt="" />
+                <img src="/img/logo/logo.png" alt="Atreya Rao – home" />
               </a>
             </div>
             <div className="trigger" onClick={() => setToggle(!toggle)}>
@@ -161,7 +161,7 @@ export const OnePageHeader = () => {
           <div className="overlay_content">
             <div className="logo">
               <Link href="/">
-                <img src="img/logo/logo.png" alt={2} />
+                <img src="/img/logo/logo.png" alt="Atreya Rao – home" />
               </Link>
             </div>
             <div className="menu">
@@ -174,7 +174,7 @@ export const OnePageHeader = () => {
               </ul>
             </div>
             <div className="button">
-              <Link href="contact">
+              <Link href="/contact">
                 Let's talk
               </Link>
             </div>

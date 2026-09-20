@@ -42,7 +42,7 @@ export default class TestimonialSlider extends Component {
                       this.previous();
                     }}
                   >
-                    <img className="sm_svg" src="img/svg/arrow.svg" alt={1} />
+                    <img className="sm_svg" src="img/svg/arrow.svg" alt="" />
                   </a>
                   <a
                     className="next "
@@ -52,7 +52,7 @@ export default class TestimonialSlider extends Component {
                       this.next();
                     }}
                   >
-                    <img className="sm_svg" src="img/svg/arrow.svg" alt={2} />
+                    <img className="sm_svg" src="img/svg/arrow.svg" alt="" />
                   </a>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default class TestimonialSlider extends Component {
                 <div>
                   <div className="list_inner">
                     <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
                       <p>
                         Duis aute irure dolor in velit esse dolore eu fugiat
                         nulla pariatur. excepteur cupidatats non proident, sunt
@@ -75,7 +75,7 @@ export default class TestimonialSlider extends Component {
                     </div>
                     <div className="info">
                       <div className="image">
-                        <img src="img/testimonials/1.jpg" alt={1} />
+                        <img src="img/testimonials/1.jpg" alt="" />
                       </div>
                       <div className="job">
                         <h3>Jonas Morgan</h3>
@@ -87,7 +87,7 @@ export default class TestimonialSlider extends Component {
                 <div>
                   <div className="list_inner">
                     <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
                       <p>
                         Duis aute irure dolor in velit esse dolore eu fugiat
                         nulla pariatur. excepteur cupidatats non proident, sunt
@@ -96,7 +96,7 @@ export default class TestimonialSlider extends Component {
                     </div>
                     <div className="info">
                       <div className="image">
-                        <img src="img/testimonials/2.jpg" alt={2} />
+                        <img src="img/testimonials/2.jpg" alt="" />
                       </div>
                       <div className="job">
                         <h3>Nicolas Jhon</h3>
@@ -108,7 +108,7 @@ export default class TestimonialSlider extends Component {
                 <div>
                   <div className="list_inner">
                     <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
                       <p>
                         Duis aute irure dolor in velit esse dolore eu fugiat
                         nulla pariatur. excepteur cupidatats non proident, sunt
@@ -117,7 +117,7 @@ export default class TestimonialSlider extends Component {
                     </div>
                     <div className="info">
                       <div className="image">
-                        <img src="img/testimonials/3.jpg" alt={3} />
+                        <img src="img/testimonials/3.jpg" alt="" />
                       </div>
                       <div className="job">
                         <h3>Jhonson Smith</h3>
@@ -129,7 +129,7 @@ export default class TestimonialSlider extends Component {
                 <div>
                   <div className="list_inner">
                     <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
                       <p>
                         Duis aute irure dolor in velit esse dolore eu fugiat
                         nulla pariatur. excepteur cupidatats non proident, sunt
@@ -138,7 +138,7 @@ export default class TestimonialSlider extends Component {
                     </div>
                     <div className="info">
                       <div className="image">
-                        <img src="img/testimonials/1.jpg" alt={1} />
+                        <img src="img/testimonials/1.jpg" alt="" />
                       </div>
                       <div className="job">
                         <h3>Jonas Morgan</h3>
@@ -150,7 +150,7 @@ export default class TestimonialSlider extends Component {
                 <div>
                   <div className="list_inner">
                     <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
                       <p>
                         Duis aute irure dolor in velit esse dolore eu fugiat
                         nulla pariatur. excepteur cupidatats non proident, sunt
@@ -159,7 +159,7 @@ export default class TestimonialSlider extends Component {
                     </div>
                     <div className="info">
                       <div className="image">
-                        <img src="img/testimonials/2.jpg" alt={2} />
+                        <img src="img/testimonials/2.jpg" alt="" />
                       </div>
                       <div className="job">
                         <h3>Nicolas Jhon</h3>
@@ -171,7 +171,7 @@ export default class TestimonialSlider extends Component {
                 <div>
                   <div className="list_inner">
                     <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
                       <p>
                         Duis aute irure dolor in velit esse dolore eu fugiat
                         nulla pariatur. excepteur cupidatats non proident, sunt
@@ -180,7 +180,7 @@ export default class TestimonialSlider extends Component {
                     </div>
                     <div className="info">
                       <div className="image">
-                        <img src="img/testimonials/3.jpg" alt={3} />
+                        <img src="img/testimonials/3.jpg" alt="" />
                       </div>
                       <div className="job">
                         <h3>Jhonson Smith</h3>

@@ -5,11 +5,21 @@ import Partners from "@/components/Partners";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import NikolasLayout from "@/layouts/NikolasLayout";
 import Link from "next/link";
+import { pageMetadata } from "@/utility/site";
+
+export const metadata = pageMetadata({
+  title: "About",
+  description:
+    "Full stack and mobile developer Atreya Rao: background, experience and tech stack across React, React Native, Node.js/NestJS, AWS EKS and Kubernetes.",
+  path: "/about",
+  openGraph: { type: "profile" },
+});
 
 
 const page = () => {
   return (
     <NikolasLayout>
+      <h1 className="sr_only">About Atreya Rao, Full Stack and Mobile Developer</h1>
       {/* Page_title */}
       <div className="nicolas_sm_page_title">
         <div className="container">
@@ -34,7 +44,7 @@ const page = () => {
                 className="popup-youtube"
                 href="https://www.youtube.com/watch?v=7e90gBu4pas"
               >
-                <img className="sm_svg" src="img/svg/playback.svg" alt={1} />
+                <img className="sm_svg" src="img/svg/playback.svg" alt="" />
               </a>
             </div>
           </div>
@@ -55,7 +65,7 @@ const page = () => {
                     <div className="space" />
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/1.png" alt={1} />
+                        <img src="img/about/1.png" alt="" />
                       </div>
                       <div className="title">
                         <span>Front End Developer</span>
@@ -79,7 +89,7 @@ const page = () => {
                     <div className="space"></div>
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/2.png" alt={2} />
+                        <img src="img/about/2.png" alt="" />
                       </div>
                       <div className="title">
                         <span>Development</span>
@@ -103,7 +113,7 @@ const page = () => {
                     <div className="space"></div>
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/3.png" alt={3} />
+                        <img src="img/about/3.png" alt="" />
                       </div>
                       <div className="title">
                         <span>React Native Developer</span>
@@ -127,7 +137,7 @@ const page = () => {
                     <div className="space"></div>
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/4.png" alt={4} />
+                        <img src="img/about/4.png" alt="" />
                       </div>
                       <div className="title">
                         <span>Backend Developer</span>
@@ -169,7 +179,7 @@ const page = () => {
               </p>
             </div>
             <div className="right">
-              <Link href="portfolio">(( Projects all ))</Link>
+              <Link href="/portfolio">(( Projects all ))</Link>
             </div>
           </div>
         </div>
@@ -234,8 +244,8 @@ const page = () => {
           <div className="extra_container">
             <div className="awards_in">
               <div className="image_box">
-                <img className="star" src="img/awards/1.png" alt={1} />
-                <img src="img/awards/2.png" alt={2} />
+                <img className="star" src="img/awards/1.png" alt="" />
+                <img src="img/awards/2.png" alt="" />
               </div>
               <div className="awards_box">
                 <div className="list_inner">
@@ -250,7 +260,7 @@ const page = () => {
                       <img
                         className="sm_svg"
                         src="img/svg/down_arrow.svg"
-                        alt={1}
+                        alt=""
                       />
                     </span>
                   </div>
@@ -267,7 +277,7 @@ const page = () => {
                       <img
                         className="sm_svg"
                         src="img/svg/down_arrow.svg"
-                        alt={1}
+                        alt=""
                       />
                     </span>
                   </div>
@@ -284,7 +294,7 @@ const page = () => {
                       <img
                         className="sm_svg"
                         src="img/svg/down_arrow.svg"
-                        alt={1}
+                        alt=""
                       />
                     </span>
                   </div>
@@ -301,7 +311,7 @@ const page = () => {
                       <img
                         className="sm_svg"
                         src="img/svg/down_arrow.svg"
-                        alt={1}
+                        alt=""
                       />
                     </span>
                   </div>
@@ -318,7 +328,7 @@ const page = () => {
                       <img
                         className="sm_svg"
                         src="img/svg/down_arrow.svg"
-                        alt={1}
+                        alt=""
                       />
                     </span>
                   </div>

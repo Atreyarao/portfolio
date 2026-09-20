@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
@@ -34,4 +30,441 @@ html {
 
 .nicolas_sm_blog_details .posted li a {
   display: flex;
+}
+
+/* Keep `position: sticky` working: `overflow-x: hidden` on both html and body
+   turns body into a scroll container, which breaks sticky descendants. */
+html body {
+  overflow-x: clip;
+}
+
+/* ---------------------------------------------------------------- Blog --- */
+.nicolas_sm_blog .post_excerpt {
+  font-size: 16px;
+  margin: -25px 0 40px;
+}
+
+.nicolas_sm_blog .right .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nicolas_sm_blog_details .page_title_in > .post_category {
+  width: auto;
+  padding: 0 18px;
+}
+.nicolas_sm_blog_details .page_title_in > .post_title {
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: clamp(32px, 4.6vw, 60px);
+  line-height: 1.15;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post_hero {
+  border: 1px solid #2f3030;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.post_hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Article body */
+.nicolas_sm_blog_details .details {
+  min-width: 0;
+}
+.post_body {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  min-width: 0;
+}
+.post_body p,
+.post_body .post_list li {
+  font-size: 17px;
+  line-height: 1.85;
+}
+.post_body strong {
+  color: #fff;
+  font-weight: 600;
+}
+.post_body a {
+  color: #ffbd4a;
+}
+.post_body h2 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 36px;
+  line-height: 1.2;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #2f3030;
+  scroll-margin-top: 110px;
+}
+.post_body h3 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 14px;
+}
+.post_body h4 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.post_body :not(pre) > code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  color: #ffbd4a;
+  background-color: #111212;
+  border: 1px solid #2f3030;
+  border-radius: 6px;
+  padding: 2px 6px;
+  word-break: break-word;
+}
+
+.post_list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.post_list li {
+  position: relative;
+  padding-left: 30px;
+}
+.post_list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0.8em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffbd4a;
+}
+.post_list.ordered {
+  counter-reset: post-step;
+}
+.post_list.ordered li {
+  counter-increment: post-step;
+  padding-left: 46px;
+}
+.post_list.ordered li::before {
+  content: counter(post-step);
+  top: 0.2em;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  color: #171818;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* Code blocks */
+.post_code {
+  margin: 0;
+  background-color: #0e0f0f;
+  border: 1px solid #2f3030;
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 0;
+}
+.post_code figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 18px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+  color: #959595;
+  background-color: #111212;
+  border-bottom: 1px solid #2f3030;
+}
+.post_code figcaption .lang {
+  color: #ffbd4a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+.post_body .post_code .note {
+  margin: 0;
+  padding: 10px 18px;
+  font-size: 12.5px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #ffbd4a;
+  border-bottom: 1px solid #2f3030;
+}
+.post_code pre {
+  margin: 0;
+  padding: 20px 22px;
+  overflow-x: auto;
+  tab-size: 2;
+}
+.post_code pre code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #d6d6d6;
+  white-space: pre;
+}
+
+/* Callout */
+.post_callout {
+  background-color: #111212;
+  border: 1px solid #2f3030;
+  border-left: 3px solid #ffbd4a;
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+.post_callout p {
+  font-size: 16px;
+}
+
+/* Tables */
+.post_table {
+  overflow-x: auto;
+  border: 1px solid #2f3030;
+  border-radius: 12px;
+}
+.post_table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.post_table th {
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  background-color: #111212;
+  white-space: nowrap;
+}
+.post_table th,
+.post_table td {
+  padding: 14px 18px;
+  vertical-align: top;
+  border-bottom: 1px solid #2f3030;
+}
+.post_table tr:last-child td {
+  border-bottom: 0;
+}
+.post_table td:first-child {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Stat tiles */
+.post_stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.post_stats > div {
+  background-color: #111212;
+  border: 1px solid #2f3030;
+  border-radius: 12px;
+  padding: 22px 20px;
+}
+.post_stats strong {
+  display: block;
+  color: #ffbd4a;
+  font-family: "Bebas Neue";
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1;
+}
+.post_stats span {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Pipeline diagram */
+.post_pipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.post_pipeline .stage {
+  position: relative;
+  background-color: #111212;
+  border: 1px solid #2f3030;
+  border-radius: 12px;
+  padding: 20px;
+}
+.post_pipeline .stage:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  width: 12px;
+  color: #ffbd4a;
+  font-size: 18px;
+  line-height: 1;
+}
+.post_pipeline .step {
+  display: block;
+  color: #ffbd4a;
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.post_pipeline ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+.post_pipeline li {
+  font-size: 13.5px;
+  line-height: 1.45;
+  padding-left: 14px;
+  position: relative;
+}
+.post_pipeline li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2f3030;
+}
+
+/* Sidebar / table of contents */
+.nicolas_sm_blog_details .sidebar.post_sidebar {
+  position: sticky;
+  top: 110px;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+}
+.post_toc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 45px;
+}
+.post_toc a {
+  display: block;
+  padding: 6px 0 6px 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #959595;
+  text-decoration: none;
+  border-left: 2px solid #2f3030;
+  transition: all 0.3s ease;
+}
+.post_toc a:hover,
+.post_toc a.active {
+  color: #ffbd4a;
+  border-left-color: #ffbd4a;
+}
+.nicolas_sm_blog_details .sidebar .tags span {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  color: #959595;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 1px solid #2f3030;
+  border-radius: 10px;
+  padding: 0 16px;
+  margin: 0 8px 12px 0;
+}
+.nicolas_sm_blog_details .sidebar .recent_post .info {
+  padding-left: 0;
+}
+.nicolas_sm_blog_details .posted .left span.business {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #2f3030;
+  border-radius: 10px;
+  color: #fff;
+}
+.nicolas_sm_blog_details .post_back {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nicolas_sm_blog_details .post_back:hover {
+  color: #ffbd4a;
+}
+.nicolas_sm_blog_details .post_cta {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 1040px) {
+  .nicolas_sm_blog_details .sidebar.post_sidebar {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+  .post_pipeline,
+  .post_stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .post_pipeline .stage:nth-child(2)::after {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .post_body h2 {
+    font-size: 28px;
+  }
+  .post_body p,
+  .post_body .post_list li {
+    font-size: 16px;
+  }
+  .post_pipeline {
+    grid-template-columns: 1fr;
+  }
+  .post_pipeline .stage:not(:last-child)::after {
+    content: "↓";
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: -16px;
+    transform: translateX(-50%);
+  }
+  .post_stats strong {
+    font-size: 38px;
+  }
+  .post_hero {
+    border-radius: 14px;
+  }
+}
+
+/* Visually hidden but readable by crawlers and screen readers (used for page h1s). */
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

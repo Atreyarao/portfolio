@@ -3,9 +3,18 @@ import Service from "@/components/Service";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import WorkingProcess from "@/components/WorkingProcess";
 import NikolasLayout from "@/layouts/NikolasLayout";
+import { pageMetadata } from "@/utility/site";
+
+export const metadata = pageMetadata({
+  title: "Skills",
+  description:
+    "Front end (React), back end (Node.js, NestJS), mobile (React Native) and DevOps (AWS, Kubernetes, Terraform, GitHub Actions) skills of Atreya Rao.",
+  path: "/skills",
+});
 const page = () => {
   return (
     <NikolasLayout>
+      <h1 className="sr_only">Skills: Front End, Back End, Mobile and DevOps</h1>
       {" "}
       {/* Page_title */}
       <div className="nicolas_sm_page_title">
