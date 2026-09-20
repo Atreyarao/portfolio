@@ -50,17 +50,17 @@ const Portfolio = ({ noTitle = false }) => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="https://www.odetoparis.com/images/logo.webp" alt="Ode To Paris tour management platform logo" />
-                    <Link className="nicolas_sm_full_link" href="/portfolio_single?id=6" />
+                    <Link className="nicolas_sm_full_link" href="/portfolio_single/ode-to-paris" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
                       <a href="#">Full Stack</a>
                       <h3>
-                        <Link href="/portfolio_single?id=6">Ode To Paris</Link>
+                        <Link href="/portfolio_single/ode-to-paris">Ode To Paris</Link>
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="/portfolio_single?id=6">
+                      <Link href="/portfolio_single/ode-to-paris">
                         <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                       </Link>
                     </div>
@@ -71,17 +71,17 @@ const Portfolio = ({ noTitle = false }) => {
                 <div className="list_inner">
                   <div className="image">
                     <img loading="lazy" decoding="async" src="img/portfolio/weresidents.png" alt="We Residents property management web app" />
-                    <Link className="nicolas_sm_full_link" href="/portfolio_single?id=1" />
+                    <Link className="nicolas_sm_full_link" href="/portfolio_single/we-residents" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
                       <a href="#">Full Stack</a>
                       <h3>
-                        <Link href="/portfolio_single?id=1">We Residents</Link>
+                        <Link href="/portfolio_single/we-residents">We Residents</Link>
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="/portfolio_single?id=1">
+                      <Link href="/portfolio_single/we-residents">
                         <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                       </Link>
                     </div>
@@ -96,17 +96,17 @@ const Portfolio = ({ noTitle = false }) => {
                       src="img/portfolio/weresidents_mobile_app.png"
                       alt="We Residents mobile app built with React Native"
                     />
-                    <Link className="nicolas_sm_full_link" href="/portfolio_single?id=2" />
+                    <Link className="nicolas_sm_full_link" href="/portfolio_single/we-residents-mobile-app" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
                       <a href="#"> Mobile App</a>
                       <h3>
-                        <Link href="/portfolio_single?id=2">We Residents Mobile</Link>
+                        <Link href="/portfolio_single/we-residents-mobile-app">We Residents Mobile</Link>
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="/portfolio_single?id=2">
+                      <Link href="/portfolio_single/we-residents-mobile-app">
                         <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                       </Link>
                     </div>
@@ -117,17 +117,17 @@ const Portfolio = ({ noTitle = false }) => {
                 <div className="list_inner">
                   <div className="image">
                     <img loading="lazy" decoding="async" src="img/portfolio/Ticket_main.png" alt="Ticketing system web app" />
-                    <Link className="nicolas_sm_full_link" href="/portfolio_single?id=3" />
+                    <Link className="nicolas_sm_full_link" href="/portfolio_single/ticketing-system" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
                       <a href="#">Full Stack</a>
                       <h3>
-                        <Link href="/portfolio_single?id=3">Ticketing System</Link>
+                        <Link href="/portfolio_single/ticketing-system">Ticketing System</Link>
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="/portfolio_single?id=3">
+                      <Link href="/portfolio_single/ticketing-system">
                         <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                       </Link>
                     </div>
@@ -138,17 +138,17 @@ const Portfolio = ({ noTitle = false }) => {
                 <div className="list_inner">
                   <div className="image">
                     <img loading="lazy" decoding="async" style={{ objectFit: "contain" }} src="img/portfolio/ebook.png" alt="React E-Book reader" />
-                    <Link className="nicolas_sm_full_link" href="/portfolio_single?id=4" />
+                    <Link className="nicolas_sm_full_link" href="/portfolio_single/react-ebook" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
                       <a href="#">Front End</a>
                       <h3>
-                        <Link href="/portfolio_single?id=4">Ebook React JS</Link>
+                        <Link href="/portfolio_single/react-ebook">Ebook React JS</Link>
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="/portfolio_single?id=4">
+                      <Link href="/portfolio_single/react-ebook">
                         <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                       </Link>
                     </div>
@@ -173,11 +173,11 @@ const Portfolio = ({ noTitle = false }) => {
                     <div className="left">
                       <a href="#">Shopify Store</a>
                       <h3>
-                        <Link href="/portfolio_single?id=5">E-commerce site design and build</Link>
+                        <Link href="/portfolio_single/simple-fashion-ecommerce">E-commerce site design and build</Link>
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="/portfolio_single?id=5">
+                      <Link href="/portfolio_single/simple-fashion-ecommerce">
                         <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                       </Link>
                     </div>

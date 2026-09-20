@@ -1,6 +1,6 @@
 import { absoluteUrl } from "@/utility/site";
 import { posts } from "./blog/data";
-import projects from "./portfolio_single/data";
+import { projectHref, projects } from "./portfolio_single/projects";
 
 export default function sitemap() {
   const pages = [
@@ -16,8 +16,8 @@ export default function sitemap() {
     priority,
   }));
 
-  const projectPages = Object.keys(projects).map((id) => ({
-    url: absoluteUrl("/portfolio_single?id=" + id),
+  const projectPages = projects.map((project) => ({
+    url: absoluteUrl(projectHref(project.slug)),
     changeFrequency: "yearly",
     priority: 0.7,
   }));
