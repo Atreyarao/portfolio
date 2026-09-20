@@ -5,7 +5,7 @@ import { projectHref, projects } from "../portfolio_single/projects";
 export const metadata = pageMetadata({
   title: "Portfolio",
   description:
-    "Selected projects by Atreya Rao: full stack web apps, a React Native mobile app and e-commerce builds using React, Node.js, MongoDB and AWS.",
+    "Selected projects by Atreya Rao: Shiftly, a healthcare shift marketplace, a Paris tour booking platform, full stack web apps and React Native mobile apps.",
   path: "/portfolio",
 });
 

@@ -49,6 +49,27 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
+                    <img loading="lazy" decoding="async" src="/img/portfolio/shiftly-1.jpg" alt="Shiftly healthcare shift marketplace website" />
+                    <Link className="nicolas_sm_full_link" href="/portfolio_single/shiftly" />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <a href="#">Full Stack &amp; Mobile</a>
+                      <h3>
+                        <Link href="/portfolio_single/shiftly">Shiftly</Link>
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="/portfolio_single/shiftly">
+                        <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <div className="image">
                     <img src="https://www.odetoparis.com/images/logo.webp" alt="Ode To Paris tour management platform logo" />
                     <Link className="nicolas_sm_full_link" href="/portfolio_single/ode-to-paris" />
                   </div>

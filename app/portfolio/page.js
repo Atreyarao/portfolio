@@ -35,6 +35,24 @@ const page = () => {
                 <div className="list_inner">
                   <img
                     style={{ objectFit: "contain" }}
+                    src="img/portfolio/shiftly-1.jpg"
+                    alt="Shiftly healthcare shift marketplace website"
+                  />
+                  <div className="details">
+                    <div className="category">
+                      <span>Full Stack &amp; Mobile</span>
+                    </div>
+                    <div className="title">
+                      <h3>Shiftly</h3>
+                    </div>
+                  </div>
+                  <Link className="nicolas_sm_full_link" href="/portfolio_single/shiftly" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div className="list_inner">
+                  <img
+                    style={{ objectFit: "contain" }}
                     src="https://www.odetoparis.com/images/logo.webp"
                     alt="Ode To Paris walking tours logo"
                   />

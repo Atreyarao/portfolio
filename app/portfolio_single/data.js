@@ -312,4 +312,97 @@ export default {
     techStack: "Next.js, ReactJS, Node.js, MongoDB, AWS",
     category: "Full Stack Project",
   },
+  7: {
+    slug: "shiftly",
+    title: "Shiftly",
+    seoTitle: "Shiftly: Healthcare Shift Marketplace Case Study",
+    seoDescription:
+      "Case study: Shiftly, a healthcare shift marketplace I built end to end: Node.js backend, admin app, website and React Native mobile app.",
+    mainImg: "/img/portfolio/shiftly-1.jpg",
+    ogImage: "/img/portfolio/shiftly-og.jpg",
+    ogImageSize: { width: 1200, height: 630 },
+    subHeading:
+      "A healthcare shift marketplace for hospitals and verified professionals, built end to end.",
+    content: [
+      {
+        type: "S",
+        string:
+          "Shiftly is a shift-coverage marketplace, not a job board. A hospital posts a shift, a verified professional applies, the hospital selects, the worker confirms, checks in on site, completes the shift and gets paid. I designed and built every part of it myself: the Node.js backend, the admin app used by the operations team, the public website, and the React Native mobile app for hospitals and professionals. It is Bengaluru-first and preparing for launch.",
+      },
+      {
+        type: "P",
+        points: [
+          "The core shift loop: an eight-step flow from posting a shift to paying the worker, modelled as explicit state machines for accounts, shifts, applications, assignments, subscriptions and disputes, so every transition has clear rules.",
+          "Verified professionals: phone OTP sign-up, document uploads that are validated on the server (type, size and file-signature checks), and an admin review queue for KYC and licences before anyone can apply.",
+          "Verified check-in: location-based check-in against a per-hospital geofence, a manual-approval fallback, late-arrival handling and automatic no-show detection.",
+          "Automation: scheduled jobs expire unconfirmed selections, open check-in windows, start shifts, escalate missing check-ins, mark no-shows, auto-approve stale completions and close unfilled shifts, so the marketplace runs without manual babysitting.",
+          "Payments: Razorpay payment orders, a wallet backed by an append-only ledger, refunds, and subscription plans with admin-controlled pricing and coupons.",
+          "Fair cancellations and disputes: time-based cancellation rules for hospitals and professionals, reliability tracking for workers, and a dispute path that gives admins the full evidence timeline.",
+          "Notifications: push, SMS, email and in-app messages, each dispatched per channel with its own delivery status.",
+          "Admin app: a console for the verification queue, live shift and assignment monitoring, payments, subscriptions, plans, coupons, profession categories and manual notifications.",
+          "Dynamic role categories: doctors, nurses, allied health and technicians are data rather than code, so a new regulated profession can be added without an app release.",
+          "Mobile app: a React Native app where hospitals post and manage shifts and professionals find, apply, check in and complete them.",
+        ],
+      },
+      {
+        type: "S",
+        string:
+          "The platform is designed around three outcomes: how quickly a shift gets filled, verified show-up, and hospital trust. Every rule and feature was checked against those three.",
+      },
+    ],
+    sections: [
+      {
+        heading: "The problem",
+        paragraphs: [
+          "Hospitals lose shifts to last-minute gaps, unverified staffing and no-shows, while healthcare professionals chase unclear pay and paperwork. General job boards are built to collect applications, not to guarantee that a qualified person actually turns up on the day.",
+          "Shiftly treats a shift as the product. Speed of matching matters more than perfect matching, trust matters more than growth hacks, and workers keep 100% of the pay a hospital posts.",
+        ],
+      },
+      {
+        heading: "What I built",
+        paragraphs: [
+          "Backend: a TypeScript and Node.js API on MongoDB, organised as a modular monolith. Domains such as auth, shifts, applications, assignments, payments, notifications, subscriptions and admin are separate modules with clear boundaries, so they can be split into services later over plain HTTP if load ever demands it.",
+          "Admin app: the operations console the Shiftly team uses every day, from reviewing documents and approving hospitals to watching shifts at risk and resolving disputes.",
+          "Website: a Next.js marketing site at shiftly.health that explains the product to hospitals and professionals, with server-rendered pages, structured metadata and a sitemap.",
+          "Mobile app: a React Native app for both sides of the marketplace. The website lists it as coming soon on the App Store and Google Play.",
+        ],
+      },
+      {
+        heading: "Engineering decisions worth calling out",
+        points: [
+          "Atomic multi-step writes: anything that touches more than one collection, such as confirming a worker, creating the assignment and updating the shift’s filled count, runs as one database transaction through a shared helper, so a failure never leaves half-updated state.",
+          "Append-only records: audit logs, the wallet ledger and cancellation records are never edited after they are written, which keeps every money movement and admin override traceable.",
+          "Composable feature gates: subscription plan checks are small middleware functions stacked on routes, so pricing and limits can change through admin-controlled configuration instead of code.",
+          "Validation at the boundary: every request is schema-validated, and every response uses one consistent success and error envelope that the apps can rely on.",
+          "Cursor-based pagination on every list endpoint, so screens stay fast as the data grows.",
+          "Business rules written down first: state machines, cancellation windows and edge cases live in design documents that the code and the unit tests follow.",
+        ],
+      },
+    ],
+    subHeading2: "Status",
+    content2:
+      "Shiftly is preparing for its Bengaluru launch. The website is live at shiftly.health, and the mobile apps are listed as coming soon on the App Store and Google Play.",
+    stats: [
+      { value: "4", label: "products built end to end" },
+      { value: "8", label: "step shift lifecycle" },
+      { value: "100%", label: "of posted pay goes to workers" },
+    ],
+    images: [
+      "/img/portfolio/shiftly-1.jpg",
+      "/img/portfolio/shiftly-2.jpg",
+      "/img/portfolio/shiftly-3.jpg",
+      "/img/portfolio/shiftly-4.jpg",
+    ],
+    imageAlts: [
+      "Shiftly website hero: fill healthcare shifts, not just job posts, with a sample ICU night shift card",
+      "Shiftly core loop from open shift to paid shift in eight steps",
+      "Shiftly features built around trust, speed and fairness: verified professionals, verified check-in and attendance history",
+      "Shiftly role categories for doctors, nurses, allied health and technicians",
+    ],
+    link: "https://www.shiftly.health",
+    projectFor: "Shiftly (healthcare staffing marketplace)",
+    techStack:
+      "React Native, Next.js, Node.js, TypeScript, Express, MongoDB, AWS S3, Razorpay, Docker",
+    category: "Full Stack & Mobile Project",
+  },
 };

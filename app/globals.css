@@ -633,3 +633,6 @@ html body {
 .project_video {
   margin-bottom: 60px;
 }
+.project_section + .text.bottom {
+  margin-top: 60px;
+}
