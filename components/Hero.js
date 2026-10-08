@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="nicolas_sm_hero">
         <div className="container">
           <h1 className="sr_only">
-            Atreya Rao, Full Stack Software Engineer (React, Node.js, NestJS, AWS)
+            Atreya Rao, Full Stack and React Native Developer for Hire (React, Node.js, NestJS, AWS)
           </h1>
           <div className="hero_text">
             <div className="left">
@@ -46,8 +46,8 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="" />
                     <h3>About me</h3>
                     <p>
-                      Hi, I'm Atreya Rao, Software Engineer 2 @ Deloitte USI. An aspiring entrepreneur,
-                      with ability to built products from scratch.
+                      Hi, I'm Atreya Rao, Software Engineer 2 @ Deloitte USI, a full stack developer who
+                      builds products from scratch. Open to full-time roles and freelance or contract work.
                     </p>
                   </div>
                   <div className="info_list">

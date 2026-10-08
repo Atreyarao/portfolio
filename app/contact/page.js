@@ -7,13 +7,13 @@ import { pageMetadata } from "@/utility/site";
 export const metadata = pageMetadata({
   title: "Contact",
   description:
-    "Get in touch with Atreya Rao about full stack, mobile or cloud engineering roles and projects. Email, LinkedIn and résumé.",
+    "Hire Atreya Rao for full-time, freelance or contract work in full stack, React Native mobile or AWS cloud engineering. Email, LinkedIn and résumé.",
   path: "/contact",
 });
 const page = () => {
   return (
     <NikolasLayout noFooter>
-      <h1 className="sr_only">Contact Atreya Rao</h1>
+      <h1 className="sr_only">Hire Atreya Rao: Full-Time, Freelance and Contract Work</h1>
       <div className="nicolas_sm_contact">
         <div className="nicolas_sm_page_title">
           <div className="container">
